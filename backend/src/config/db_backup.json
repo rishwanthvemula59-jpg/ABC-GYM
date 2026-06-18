@@ -1,0 +1,630 @@
+{
+  "users": [
+    {
+      "id": "732c646c-4bb4-404c-85e1-02b6f0d3548b",
+      "email": "owner@abcfitness.com",
+      "password_hash": "$2a$10$Q0M0DvSTuFdigvWNU..iSu.FTLLR8kljuAtGcWKy9QIjtcGt8P7ey",
+      "first_name": "Rajesh",
+      "last_name": "Kumar",
+      "phone": "9876543210",
+      "is_active": true,
+      "created_at": "2026-05-29T13:27:07.682Z",
+      "last_login": "2026-05-29T13:27:11.821Z"
+    },
+    {
+      "id": "12424ded-2f13-4151-9db2-1261a7307ba2",
+      "email": "owner@gym.com",
+      "password_hash": "$2a$10$Q0M0DvSTuFdigvWNU..iSu.FTLLR8kljuAtGcWKy9QIjtcGt8P7ey",
+      "first_name": "Rajesh",
+      "last_name": "Kumar",
+      "phone": "9876543210",
+      "is_active": true,
+      "created_at": "2026-05-29T13:27:07.683Z"
+    },
+    {
+      "id": "fc27b682-a166-4a7a-a520-a5e9e95eafe9",
+      "email": "owner@abcfitness.com",
+      "password_hash": "$2a$10$GGxeSg/N2/M8sFpL3n9cH.vo6sagouR3nTTQjBBTNHRlUj7BkiOHu",
+      "first_name": "Rajesh",
+      "last_name": "Kumar",
+      "phone": "9876543210",
+      "is_active": true,
+      "created_at": "2026-05-29T13:28:22.590Z"
+    },
+    {
+      "id": "424e0f8d-1d38-494d-bc83-879bdd45acee",
+      "email": "owner@gym.com",
+      "password_hash": "$2a$10$GGxeSg/N2/M8sFpL3n9cH.vo6sagouR3nTTQjBBTNHRlUj7BkiOHu",
+      "first_name": "Rajesh",
+      "last_name": "Kumar",
+      "phone": "9876543210",
+      "is_active": true,
+      "created_at": "2026-05-29T13:28:22.590Z"
+    }
+  ],
+  "gyms": [
+    {
+      "id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "owner_id": "732c646c-4bb4-404c-85e1-02b6f0d3548b",
+      "gym_name": "ABC Fitness Studio",
+      "owner_phone": "9876543210",
+      "created_at": "2026-05-29T13:27:07.683Z"
+    },
+    {
+      "id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "owner_id": "fc27b682-a166-4a7a-a520-a5e9e95eafe9",
+      "gym_name": "ABC Fitness Studio",
+      "owner_phone": "9876543210",
+      "created_at": "2026-05-29T13:28:22.591Z"
+    }
+  ],
+  "gym_settings": [
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "id": "w8ybtufg5",
+      "created_at": "2026-05-29T13:28:22.591Z"
+    }
+  ],
+  "members": [
+    {
+      "id": "7928d132-9277-4caf-bf08-55060d6f014c",
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "full_name": "Rahul Sharma",
+      "phone": "9876543211",
+      "email": "rahul@gmail.com",
+      "plan": "3_month",
+      "plan_price": 2000,
+      "start_date": "2026-05-29",
+      "expiry_date": "2026-07-13",
+      "payment_status": "paid",
+      "is_active": true,
+      "created_at": "2026-05-29T13:28:22.591Z"
+    },
+    {
+      "id": "f766bd91-db62-40d3-9834-fbb28437a9a2",
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "full_name": "Priya Reddy",
+      "phone": "9876543212",
+      "email": "priya@gmail.com",
+      "plan": "1_month",
+      "plan_price": 750,
+      "start_date": "2026-05-29",
+      "expiry_date": "2026-06-01",
+      "payment_status": "paid",
+      "is_active": true,
+      "created_at": "2026-05-29T13:28:22.592Z"
+    },
+    {
+      "id": "96393cde-da5a-4af7-9ccc-a841d16e8575",
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "full_name": "Vikram Singh",
+      "phone": "9876543213",
+      "email": "vikram@gmail.com",
+      "plan": "3_month",
+      "plan_price": 2000,
+      "start_date": "2026-05-29",
+      "expiry_date": "2026-08-02",
+      "payment_status": "paid",
+      "is_active": true,
+      "created_at": "2026-05-29T13:28:22.593Z"
+    },
+    {
+      "id": "dec04788-43d9-4a8c-9df6-8b18a0ed45d8",
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "full_name": "Neha Gupta",
+      "phone": "9876543214",
+      "email": "neha@gmail.com",
+      "plan": "1_month",
+      "plan_price": 750,
+      "start_date": "2026-05-29",
+      "expiry_date": "2026-05-24",
+      "payment_status": "paid",
+      "is_active": true,
+      "created_at": "2026-05-29T13:28:22.594Z"
+    },
+    {
+      "id": "bce1e7b4-13d1-4b61-87e7-3e6e348f76d1",
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "full_name": "Anil Kumar",
+      "phone": "9876543215",
+      "email": "anil@gmail.com",
+      "plan": "1_month",
+      "plan_price": 750,
+      "start_date": "2026-05-29",
+      "expiry_date": "2026-06-18",
+      "payment_status": "paid",
+      "is_active": true,
+      "created_at": "2026-05-29T13:28:22.595Z"
+    }
+  ],
+  "attendance": [
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "fec79148-17d0-483d-9990-38d93f365397",
+      "check_in_date": "2026-05-29",
+      "marked_by": "self",
+      "id": "ldcmwdabs",
+      "created_at": "2026-05-29T13:27:07.684Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "fec79148-17d0-483d-9990-38d93f365397",
+      "check_in_date": "2026-05-28",
+      "marked_by": "self",
+      "id": "57jlj98ut",
+      "created_at": "2026-05-29T13:27:07.684Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "fec79148-17d0-483d-9990-38d93f365397",
+      "check_in_date": "2026-05-27",
+      "marked_by": "self",
+      "id": "a8elaxzs8",
+      "created_at": "2026-05-29T13:27:07.684Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "fec79148-17d0-483d-9990-38d93f365397",
+      "check_in_date": "2026-05-26",
+      "marked_by": "self",
+      "id": "1hwggxhxc",
+      "created_at": "2026-05-29T13:27:07.684Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "fec79148-17d0-483d-9990-38d93f365397",
+      "check_in_date": "2026-05-25",
+      "marked_by": "self",
+      "id": "gnvcot0bi",
+      "created_at": "2026-05-29T13:27:07.685Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "090ccb51-81cb-4bd0-bd3e-0557761531c1",
+      "check_in_date": "2026-05-29",
+      "marked_by": "self",
+      "id": "ftkv2zmb7",
+      "created_at": "2026-05-29T13:27:07.685Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "090ccb51-81cb-4bd0-bd3e-0557761531c1",
+      "check_in_date": "2026-05-28",
+      "marked_by": "self",
+      "id": "0ehjz1fpe",
+      "created_at": "2026-05-29T13:27:07.685Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "090ccb51-81cb-4bd0-bd3e-0557761531c1",
+      "check_in_date": "2026-05-27",
+      "marked_by": "self",
+      "id": "kl57bs1nr",
+      "created_at": "2026-05-29T13:27:07.685Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "090ccb51-81cb-4bd0-bd3e-0557761531c1",
+      "check_in_date": "2026-05-26",
+      "marked_by": "self",
+      "id": "99dbuz12u",
+      "created_at": "2026-05-29T13:27:07.685Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "090ccb51-81cb-4bd0-bd3e-0557761531c1",
+      "check_in_date": "2026-05-25",
+      "marked_by": "self",
+      "id": "17je0glci",
+      "created_at": "2026-05-29T13:27:07.685Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "0f1e707e-5120-49a2-bc08-58193d2d4ca9",
+      "check_in_date": "2026-05-29",
+      "marked_by": "self",
+      "id": "890y25pxt",
+      "created_at": "2026-05-29T13:27:07.686Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "0f1e707e-5120-49a2-bc08-58193d2d4ca9",
+      "check_in_date": "2026-05-28",
+      "marked_by": "self",
+      "id": "t32r30y6a",
+      "created_at": "2026-05-29T13:27:07.686Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "0f1e707e-5120-49a2-bc08-58193d2d4ca9",
+      "check_in_date": "2026-05-27",
+      "marked_by": "self",
+      "id": "l3phd300z",
+      "created_at": "2026-05-29T13:27:07.686Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "0f1e707e-5120-49a2-bc08-58193d2d4ca9",
+      "check_in_date": "2026-05-26",
+      "marked_by": "self",
+      "id": "d64z2cu51",
+      "created_at": "2026-05-29T13:27:07.686Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "0f1e707e-5120-49a2-bc08-58193d2d4ca9",
+      "check_in_date": "2026-05-25",
+      "marked_by": "self",
+      "id": "hodaqowqn",
+      "created_at": "2026-05-29T13:27:07.686Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "1c4e2024-5f67-4482-9e5c-bc6cf366c638",
+      "check_in_date": "2026-05-29",
+      "marked_by": "self",
+      "id": "9zl4v4nd9",
+      "created_at": "2026-05-29T13:27:07.687Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "1c4e2024-5f67-4482-9e5c-bc6cf366c638",
+      "check_in_date": "2026-05-28",
+      "marked_by": "self",
+      "id": "koqqz7bf4",
+      "created_at": "2026-05-29T13:27:07.687Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "1c4e2024-5f67-4482-9e5c-bc6cf366c638",
+      "check_in_date": "2026-05-27",
+      "marked_by": "self",
+      "id": "4c72h3nvp",
+      "created_at": "2026-05-29T13:27:07.687Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "1c4e2024-5f67-4482-9e5c-bc6cf366c638",
+      "check_in_date": "2026-05-26",
+      "marked_by": "self",
+      "id": "mtogb4hz2",
+      "created_at": "2026-05-29T13:27:07.687Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "1c4e2024-5f67-4482-9e5c-bc6cf366c638",
+      "check_in_date": "2026-05-25",
+      "marked_by": "self",
+      "id": "ls4jly3o4",
+      "created_at": "2026-05-29T13:27:07.687Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "1704b565-bc00-4447-8713-fc86cb3eaa41",
+      "check_in_date": "2026-05-29",
+      "marked_by": "self",
+      "id": "rgke42bn5",
+      "created_at": "2026-05-29T13:27:07.688Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "1704b565-bc00-4447-8713-fc86cb3eaa41",
+      "check_in_date": "2026-05-28",
+      "marked_by": "self",
+      "id": "ov0145up3",
+      "created_at": "2026-05-29T13:27:07.688Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "1704b565-bc00-4447-8713-fc86cb3eaa41",
+      "check_in_date": "2026-05-27",
+      "marked_by": "self",
+      "id": "bnkwxtn50",
+      "created_at": "2026-05-29T13:27:07.688Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "1704b565-bc00-4447-8713-fc86cb3eaa41",
+      "check_in_date": "2026-05-26",
+      "marked_by": "self",
+      "id": "sav4qjru4",
+      "created_at": "2026-05-29T13:27:07.688Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "1704b565-bc00-4447-8713-fc86cb3eaa41",
+      "check_in_date": "2026-05-25",
+      "marked_by": "self",
+      "id": "4kwlld0dw",
+      "created_at": "2026-05-29T13:27:07.688Z"
+    },
+    {
+      "id": "f68fa727-bac3-422c-a310-eed62d484095",
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "eed6e826-a603-4956-a16e-81a2903b29af",
+      "check_in_date": "2026-05-29",
+      "marked_by": "self",
+      "created_at": "2026-05-29T13:27:54.459Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "7928d132-9277-4caf-bf08-55060d6f014c",
+      "check_in_date": "2026-05-29",
+      "marked_by": "self",
+      "id": "l0u3dc069",
+      "created_at": "2026-05-29T13:28:22.591Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "7928d132-9277-4caf-bf08-55060d6f014c",
+      "check_in_date": "2026-05-28",
+      "marked_by": "self",
+      "id": "rg5pa3v2p",
+      "created_at": "2026-05-29T13:28:22.592Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "7928d132-9277-4caf-bf08-55060d6f014c",
+      "check_in_date": "2026-05-27",
+      "marked_by": "self",
+      "id": "f3fee3f6v",
+      "created_at": "2026-05-29T13:28:22.592Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "7928d132-9277-4caf-bf08-55060d6f014c",
+      "check_in_date": "2026-05-26",
+      "marked_by": "self",
+      "id": "gdalk6563",
+      "created_at": "2026-05-29T13:28:22.592Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "7928d132-9277-4caf-bf08-55060d6f014c",
+      "check_in_date": "2026-05-25",
+      "marked_by": "self",
+      "id": "4ec6g4kmy",
+      "created_at": "2026-05-29T13:28:22.592Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "f766bd91-db62-40d3-9834-fbb28437a9a2",
+      "check_in_date": "2026-05-29",
+      "marked_by": "self",
+      "id": "vm4ujp8mb",
+      "created_at": "2026-05-29T13:28:22.592Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "f766bd91-db62-40d3-9834-fbb28437a9a2",
+      "check_in_date": "2026-05-28",
+      "marked_by": "self",
+      "id": "f9jv37agt",
+      "created_at": "2026-05-29T13:28:22.592Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "f766bd91-db62-40d3-9834-fbb28437a9a2",
+      "check_in_date": "2026-05-27",
+      "marked_by": "self",
+      "id": "e13p3yrhm",
+      "created_at": "2026-05-29T13:28:22.593Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "f766bd91-db62-40d3-9834-fbb28437a9a2",
+      "check_in_date": "2026-05-26",
+      "marked_by": "self",
+      "id": "to9l352mq",
+      "created_at": "2026-05-29T13:28:22.593Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "f766bd91-db62-40d3-9834-fbb28437a9a2",
+      "check_in_date": "2026-05-25",
+      "marked_by": "self",
+      "id": "ixmssznql",
+      "created_at": "2026-05-29T13:28:22.593Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "96393cde-da5a-4af7-9ccc-a841d16e8575",
+      "check_in_date": "2026-05-29",
+      "marked_by": "self",
+      "id": "4182nizu9",
+      "created_at": "2026-05-29T13:28:22.593Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "96393cde-da5a-4af7-9ccc-a841d16e8575",
+      "check_in_date": "2026-05-28",
+      "marked_by": "self",
+      "id": "x11dre1bt",
+      "created_at": "2026-05-29T13:28:22.593Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "96393cde-da5a-4af7-9ccc-a841d16e8575",
+      "check_in_date": "2026-05-27",
+      "marked_by": "self",
+      "id": "q21v1e7s3",
+      "created_at": "2026-05-29T13:28:22.594Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "96393cde-da5a-4af7-9ccc-a841d16e8575",
+      "check_in_date": "2026-05-26",
+      "marked_by": "self",
+      "id": "mbgxm5zk2",
+      "created_at": "2026-05-29T13:28:22.594Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "96393cde-da5a-4af7-9ccc-a841d16e8575",
+      "check_in_date": "2026-05-25",
+      "marked_by": "self",
+      "id": "gd6d2xxbh",
+      "created_at": "2026-05-29T13:28:22.594Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "dec04788-43d9-4a8c-9df6-8b18a0ed45d8",
+      "check_in_date": "2026-05-29",
+      "marked_by": "self",
+      "id": "5kfkkiwul",
+      "created_at": "2026-05-29T13:28:22.594Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "dec04788-43d9-4a8c-9df6-8b18a0ed45d8",
+      "check_in_date": "2026-05-28",
+      "marked_by": "self",
+      "id": "lroscxc84",
+      "created_at": "2026-05-29T13:28:22.594Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "dec04788-43d9-4a8c-9df6-8b18a0ed45d8",
+      "check_in_date": "2026-05-27",
+      "marked_by": "self",
+      "id": "o4ym7c3iz",
+      "created_at": "2026-05-29T13:28:22.594Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "dec04788-43d9-4a8c-9df6-8b18a0ed45d8",
+      "check_in_date": "2026-05-26",
+      "marked_by": "self",
+      "id": "pdvo5cl0i",
+      "created_at": "2026-05-29T13:28:22.594Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "dec04788-43d9-4a8c-9df6-8b18a0ed45d8",
+      "check_in_date": "2026-05-25",
+      "marked_by": "self",
+      "id": "xfhpyuz5b",
+      "created_at": "2026-05-29T13:28:22.594Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "bce1e7b4-13d1-4b61-87e7-3e6e348f76d1",
+      "check_in_date": "2026-05-29",
+      "marked_by": "self",
+      "id": "nqtlqrkdm",
+      "created_at": "2026-05-29T13:28:22.595Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "bce1e7b4-13d1-4b61-87e7-3e6e348f76d1",
+      "check_in_date": "2026-05-28",
+      "marked_by": "self",
+      "id": "77q1fz622",
+      "created_at": "2026-05-29T13:28:22.595Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "bce1e7b4-13d1-4b61-87e7-3e6e348f76d1",
+      "check_in_date": "2026-05-27",
+      "marked_by": "self",
+      "id": "55d53oz7w",
+      "created_at": "2026-05-29T13:28:22.595Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "bce1e7b4-13d1-4b61-87e7-3e6e348f76d1",
+      "check_in_date": "2026-05-26",
+      "marked_by": "self",
+      "id": "pan58o7tn",
+      "created_at": "2026-05-29T13:28:22.595Z"
+    },
+    {
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "member_id": "bce1e7b4-13d1-4b61-87e7-3e6e348f76d1",
+      "check_in_date": "2026-05-25",
+      "marked_by": "self",
+      "id": "mhass7fg4",
+      "created_at": "2026-05-29T13:28:22.596Z"
+    }
+  ],
+  "achievements": [
+    {
+      "member_id": "fec79148-17d0-483d-9990-38d93f365397",
+      "achievement_type": "starter",
+      "id": "a5pboba6i",
+      "created_at": "2026-05-29T13:27:07.684Z"
+    },
+    {
+      "member_id": "090ccb51-81cb-4bd0-bd3e-0557761531c1",
+      "achievement_type": "starter",
+      "id": "j9tdrgocr",
+      "created_at": "2026-05-29T13:27:07.685Z"
+    },
+    {
+      "member_id": "0f1e707e-5120-49a2-bc08-58193d2d4ca9",
+      "achievement_type": "starter",
+      "id": "9eiru2um7",
+      "created_at": "2026-05-29T13:27:07.686Z"
+    },
+    {
+      "member_id": "1c4e2024-5f67-4482-9e5c-bc6cf366c638",
+      "achievement_type": "starter",
+      "id": "01sw25qov",
+      "created_at": "2026-05-29T13:27:07.687Z"
+    },
+    {
+      "member_id": "1704b565-bc00-4447-8713-fc86cb3eaa41",
+      "achievement_type": "starter",
+      "id": "5bl42j8qg",
+      "created_at": "2026-05-29T13:27:07.688Z"
+    },
+    {
+      "member_id": "eed6e826-a603-4956-a16e-81a2903b29af",
+      "achievement_type": "starter",
+      "id": "2nwlit8a3",
+      "created_at": "2026-05-29T13:27:39.139Z"
+    },
+    {
+      "member_id": "7928d132-9277-4caf-bf08-55060d6f014c",
+      "achievement_type": "starter",
+      "id": "3gn5o0j7x",
+      "created_at": "2026-05-29T13:28:22.591Z"
+    },
+    {
+      "member_id": "f766bd91-db62-40d3-9834-fbb28437a9a2",
+      "achievement_type": "starter",
+      "id": "hf8v2re26",
+      "created_at": "2026-05-29T13:28:22.592Z"
+    },
+    {
+      "member_id": "96393cde-da5a-4af7-9ccc-a841d16e8575",
+      "achievement_type": "starter",
+      "id": "h6f4760wc",
+      "created_at": "2026-05-29T13:28:22.593Z"
+    },
+    {
+      "member_id": "dec04788-43d9-4a8c-9df6-8b18a0ed45d8",
+      "achievement_type": "starter",
+      "id": "ncd0n4dy1",
+      "created_at": "2026-05-29T13:28:22.594Z"
+    },
+    {
+      "member_id": "bce1e7b4-13d1-4b61-87e7-3e6e348f76d1",
+      "achievement_type": "starter",
+      "id": "ebx2kwavs",
+      "created_at": "2026-05-29T13:28:22.595Z"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "a5b72546-7ee3-4caa-9509-55e6ad3c9a03",
+      "user_id": "732c646c-4bb4-404c-85e1-02b6f0d3548b",
+      "gym_id": "60916a67-7d4a-4c44-bb6a-d74c54354a81",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI3MzJjNjQ2Yy00YmI0LTQwNGMtODVlMS0wMmI2ZjBkMzU0OGIiLCJlbWFpbCI6Im93bmVyQGFiY2ZpdG5lc3MuY29tIiwiZ3ltSWQiOiI2MDkxNmE2Ny03ZDRhLTRjNDQtYmI2YS1kNzRjNTQzNTRhODEiLCJpYXQiOjE3ODAwNjEyMzEsImV4cCI6MTc4MDY2NjAzMX0.fkGyKUT995aRguQUBZYRfkVAlqBHMoJ75jl6cAYe5Zs",
+      "expires_at": "2026-06-28T13:27:11.820Z",
+      "created_at": "2026-05-29T13:27:11.820Z",
+      "last_activity": "2026-05-29T13:28:10.336Z"
+    }
+  ],
+  "message_logs": []
+}

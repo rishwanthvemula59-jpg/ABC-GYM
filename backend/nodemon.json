@@ -1,0 +1,7 @@
+{
+  "ignore": [
+    "src/config/db.json",
+    "src/config/db_backup.json",
+    "logs/*"
+  ]
+}
