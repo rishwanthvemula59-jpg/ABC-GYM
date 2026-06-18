@@ -21,15 +21,21 @@ import dashboardRoutes from './routes/dashboard.js';
 const app = express();
 
 app.use(helmet());
+const corsOrigins = process.env.CORS_ORIGINS?.split(',').map(s => s.trim()) || [
+  'http://localhost:5173',
+  'http://localhost:5174',
+  'http://localhost:5175',
+  'http://127.0.0.1:5173',
+  'http://127.0.0.1:5174',
+  'http://127.0.0.1:5175'
+];
+// When CORS_ORIGINS contains '*', reflect any requesting origin (needed because credentials:true rejects literal '*')
+const corsOriginSetting = corsOrigins.includes('*')
+  ? (origin, callback) => callback(null, true)
+  : corsOrigins;
+
 app.use(cors({
-  origin: process.env.CORS_ORIGINS?.split(',') || [
-    'http://localhost:5173',
-    'http://localhost:5174',
-    'http://localhost:5175',
-    'http://127.0.0.1:5173',
-    'http://127.0.0.1:5174',
-    'http://127.0.0.1:5175'
-  ],
+  origin: corsOriginSetting,
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
