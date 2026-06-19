@@ -22,6 +22,9 @@ api.interceptors.response.use(res => res, async (err) => {
   // Handle access denied globally and surface a friendly message in the UI
   if (err.response?.status === 403) {
     try {
+      if (window.location.pathname.includes('/checkin')) {
+        return Promise.reject(err);
+      }
       const msg = err.response?.data?.error || 'Access denied: you are not authorized to access this studio.';
       localStorage.setItem('accessError', msg);
       const localId = localStorage.getItem('studioId');
@@ -36,6 +39,9 @@ api.interceptors.response.use(res => res, async (err) => {
     return Promise.reject(err);
   }
   if (err.response?.status === 401 && !orig._retry && !orig.url.includes('login') && !orig.url.includes('register')) {
+    if (window.location.pathname.includes('/checkin')) {
+      return Promise.reject(err);
+    }
     orig._retry = true;
     try {
       const { data } = await axios.post(`${import.meta.env.VITE_API_URL}/auth/refresh-token`, {
@@ -46,7 +52,9 @@ api.interceptors.response.use(res => res, async (err) => {
       return api(orig);
     } catch {
       localStorage.clear();
-      window.location.href = '/login';
+      if (!window.location.pathname.includes('/checkin')) {
+        window.location.href = '/login';
+      }
     }
   }
   return Promise.reject(err);
