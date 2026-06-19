@@ -124,7 +124,7 @@ export async function getTodayAttendance(req, res, next) {
     let records = activeCheckins.map(att => {
       const member = membersMap.get(att.member_id);
       const dateObj = new Date(att.created_at || att.check_in_date);
-      const timeStr = dateObj.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+      const timeStr = dateObj.toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', hour12: true });
 
       return {
         id: att.id,
@@ -134,16 +134,13 @@ export async function getTodayAttendance(req, res, next) {
         name: member.full_name,
         phone: member.phone,
         expiryDate: member.expiry_date,
-        markedBy: att.marked_by
+        markedBy: att.marked_by,
+        timestamp: dateObj.getTime()
       };
     });
 
     // Sort logs so the most recent is displayed first
-    records.sort((a, b) => {
-      const dtA = new Date(`${a.date} ${a.time}`);
-      const dtB = new Date(`${b.date} ${b.time}`);
-      return dtB - dtA;
-    });
+    records.sort((a, b) => b.timestamp - a.timestamp);
 
     if (search) {
       const q = search.toLowerCase();

@@ -70,7 +70,7 @@ export async function getDashboardData(req, res, next) {
 
       // Format time
       const dateObj = new Date(att.created_at || att.check_in_date);
-      const timeStr = dateObj.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true });
+      const timeStr = dateObj.toLocaleTimeString('en-US', { timeZone: 'Asia/Kolkata', hour: '2-digit', minute: '2-digit', hour12: true });
 
       return {
         id: att.id,
